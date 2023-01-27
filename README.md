@@ -79,70 +79,70 @@ Quit the server with CTRL-BREAK.
  Retorno:
  [
     {
-        "tipo": "3",
         "data": "2019-03-01",
-        "valor": "142.00",
         "cpf": "09620676017",
         "cartao": "4753****3153",
         "hora": "15:34:53",
         "dono_da_loja": "JOÃO MACEDO   ",
         "nome_loja": "BAR DO JOÃO",
-        "total_loja": 812.0,
-        "total_transacoes": 6
-    }, 
+        "total_da_loja": -204.0,
+        "total_transacoes": 6,
+        "tipo_da_transacao": "Financiamento",
+        "valor_da_transacao": -142.0
+    },
     {
-        "tipo": "5",
         "data": "2019-03-01",
-        "valor": "132.00",
         "cpf": "55641815063",
         "cartao": "3123****7687",
         "hora": "14:56:07",
         "dono_da_loja": "MARIA JOSEFINA",
         "nome_loja": "LOJA DO Ó - MATRIZ",
-        "total_loja": 868.0,
-        "total_transacoes": 6
+        "total_da_loja": 460.0,
+        "total_transacoes": 6,
+        "tipo_da_transacao": "Recibimento Empréstimo",
+        "valor_da_transacao": 132.0
     },
     {
-        "tipo": "3",
         "data": "2019-03-01",
-        "valor": "122.00",
         "cpf": "84515254073",
         "cartao": "6777****1313",
         "hora": "17:27:12",
         "dono_da_loja": "MARCOS PEREIRA",
         "nome_loja": "MERCADO DA AVENIDA",
-        "total_loja": 4670.4,
-        "total_transacoes": 16
-    },
+        "total_da_loja": 978.4,
+        "total_transacoes": 16,
+        "tipo_da_transacao": "Financiamento",
+        "valor_da_transacao": -122.0
+    }
  ]
 ```
 ```
-Rota /api/file/<Nome_Da_Loja>/
+Rota /api/file/LOJA DO Ó - MATRIZ/
  Retorno:
  [
-    {
-        "tipo": "3",
+     {
         "data": "2019-03-01",
-        "valor": "142.00",
-        "cpf": "09620676017",
-        "cartao": "4753****3153",
-        "hora": "15:34:53",
-        "dono_da_loja": "JOÃO MACEDO   ",
-        "nome_loja": "BAR DO JOÃO",
-        "total_loja": 812.0,
-        "total_transacoes": 6
+        "cpf": "55641815063",
+        "cartao": "3123****7687",
+        "hora": "14:56:07",
+        "dono_da_loja": "MARIA JOSEFINA",
+        "nome_loja": "LOJA DO Ó - MATRIZ",
+        "total_da_loja": 460.0,
+        "total_transacoes": 6,
+        "tipo_da_transacao": "Recibimento Empréstimo",
+        "valor_da_transacao": 132.0
     },
     {
-      "tipo": "2",
-      "data": "2019-03-01",
-      "valor": "112.00",
-      "cpf": "09620676017",
-      "cartao": "3648****0099",
-      "hora": "23:42:34",
-      "dono_da_loja": "JOÃO MACEDO   ",
-      "nome_loja": "BAR DO JOÃO",
-      "total_loja": 812.0,
-      "total_transacoes": 6
-  }
+        "data": "2019-03-01",
+        "cpf": "55641815063",
+        "cartao": "1234****3324",
+        "hora": "09:00:02",
+        "dono_da_loja": "MARIA JOSEFINA",
+        "nome_loja": "LOJA DO Ó - MATRIZ",
+        "total_da_loja": 460.0,
+        "total_transacoes": 6,
+        "tipo_da_transacao": "Debito",
+        "valor_da_transacao": 200.0
+    }
 ]
 ```
