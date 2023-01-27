@@ -115,8 +115,9 @@ Quit the server with CTRL-BREAK.
         "total_transacoes": 16
     },
  ]
-
- Rota /api/file/<Nome_Da_Loja>/
+```
+```
+Rota /api/file/<Nome_Da_Loja>/
  Retorno:
  [
     {
