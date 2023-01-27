@@ -52,8 +52,8 @@ python manage.py runserver
 
 ```
 System check identified no issues (0 silenced).
-January 04, 2023 - 13:53:34
-Django version 4.1.5, using settings 'djangoAnimes.settings'
+January 27, 2023 - 15:40:40
+Django version 4.1.5, using settings 'desafio_backend.settings'
 Starting development server at http://127.0.0.1:8000/
 Quit the server with CTRL-BREAK.
 ```
