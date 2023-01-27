@@ -5,6 +5,7 @@ from rest_framework.response import Response
 from rest_framework import status
 from .models import FileUploadModels
 from .forms import FileUploadForm
+from .serializer import FileUploadSerializer
 
 def page(request):
     form = FileUploadForm()
@@ -36,6 +37,17 @@ class FileUploadView(APIView):
             form = FileUploadForm()
             
         return render(request, "index.html", {"form": form})
+   
+    def get(self, request, format=None):
+        queryset = FileUploadModels.objects.all()
+        serializer = FileUploadSerializer(queryset, many=True)
+        return Response(serializer.data)
+        
 
                   
-        
+
+class FileUploadParamsView(APIView):
+    def get(self, request, loja):
+        file_upload = FileUploadModels.objects.filter(nome_loja=loja)
+        serializer = FileUploadSerializer(file_upload, many=True)
+        return Response(serializer.data)
